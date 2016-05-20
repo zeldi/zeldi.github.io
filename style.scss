@@ -7,6 +7,8 @@
 
 @import "reset";
 @import "variables";
+@import url(http://fonts.googleapis.com/css?family=Doppio+One);
+
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -191,13 +193,15 @@ img {
 }
 
 .site-name {
-  margin: 0;
+  margin: 0px 0 4px 0px;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  //font-family: $helveticaNeue;
+  font-family: "Doppio One";
   font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
+  font-size: 30px;
+  letter-spacing: -2px;
+  line-height: 1.4;
 }
 
 .site-description {
@@ -234,6 +238,16 @@ nav {
       margin: 0 10px;
       color: $blue;
     }
+  }
+
+  .nav_current {
+    border-bottom: solid;
+    color: #d40055;
+  }
+
+  a:hover {
+    border-bottom: solid;
+    color: $darkGray;
   }
 }
 
@@ -276,6 +290,23 @@ nav {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
+}
+
+.red {
+  color: #d40055;
+}
+
+h1.post-title {
+  margin: 0 0 0;
+}
+
+.post-header-picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  @include mobile {
+    display: none;
+  }
 }
 
 footer {

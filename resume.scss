@@ -1,0 +1,146 @@
+---
+---
+
+@import "mixins";
+
+
+.header-resume {
+  text-align: center;
+  font-size: 2.00rem;
+  margin: 0px 0 4px 0px;
+  font-family: "Doppio One";
+}
+
+.title-bar {
+  @include section_border;
+  padding: .4rem 0;
+  @include clearfix;
+
+  .header-title {
+    @include sans;
+    font-weight: 300;
+    font-size: 1.75rem;
+    line-height: 2rem;
+    letter-spacing: -.05rem;
+    text-align: center;
+    margin: 0 0 .5rem;
+
+    @include media_larger_than_mobile {
+      float: left;
+      margin: 0;
+    }
+  }
+}
+
+.executive-summary {
+  @include media_larger_than_mobile { font-size: 1.125rem; }
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+blockquote {
+    font-style: italic;
+    position: relative;
+    // font-size: 1.2em;
+    line-height: 1.5em;
+    padding-left: 1em;
+    border-left: 4px solid rgba(187,187,187,0.5);
+}
+
+.contact-button {
+  @include border-radius(3px);
+  background-color: #efefef;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 1.5rem auto;
+  width: 220px;
+  font-size: 1.375rem;
+  @include sans_light;
+  color: #333;
+  line-height: 55px;
+  @include transition(all .2s ease);
+
+  &:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+  &.not-looking { width: 400px; }
+}
+
+.section-header {
+  @include section_border;
+  margin-bottom: 1.5rem;
+
+  h2 {
+    @include sans;
+    font-weight: 900;
+    font-size: 1.75rem;
+    letter-spacing: -.05rem;
+    margin: 0;
+  }
+}
+// resume content styles
+
+.content-section {
+  margin: 0 0 3rem;
+
+  .resume-item {
+    margin-bottom: 2rem;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .resume-item-title {
+    @include sans_bold;
+    margin: 0 0 .75rem;
+    font-size: 1.5rem;
+    letter-spacing: -.05rem;
+    line-height: 1;
+  }
+
+  .resume-item-details {
+    font-size: 1.125rem;
+    margin: 0 0 .75rem;
+    line-height: 1;
+  }
+
+  .resume-item-title,
+  .resume-item-details,
+  .resume-item-copy,
+  .resume-item-list {
+    a {
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px solid;
+
+      &:hover {
+        border-bottom: none;
+        color: #9c9c9c;
+      }
+    }
+  }
+
+  .resume-item-copy { margin: .75rem 0 0; }
+}
+
+// footer styles
+
+.page-footer {
+  border-top: 4px solid #c7c7c7;
+  padding-top: 1.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+
+  .footer-line {
+    margin: 0;
+    font-size: .875rem;
+    color: #999;
+
+    > a {
+      font-weight: 700;
+      color: #333;
+    }
+  }
+}
