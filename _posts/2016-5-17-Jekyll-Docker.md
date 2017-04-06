@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jekyll on Docker
+title: Running Jekyll on Docker
 permalink: jekyll-on-docker
 date: 2016-5-17
 image: https://workshop.avatarnewyork.com/assets/media/docker-jekyll-container.png
@@ -54,7 +54,7 @@ Personally, I prefer second option. some of the reason are:
 <p>That's all .... and now you only need to go to the terminal and run the docker-compose using the following command:</p>
 <p><code class="highlighter-rouge">docker-compose up</code></p>
 
-<p>Now, if you go to <code class="highlighter-rouge">http://<docker-ip>:4000</docker-ip></code> in browser you will see your Jekyll website running.
+<p>Now, if you go to <code class="highlighter-rouge">http://[docker-ip]:4000</code> in browser you will see your Jekyll website running.
 
 
 <p>---</p>
