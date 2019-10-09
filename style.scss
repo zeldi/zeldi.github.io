@@ -27,7 +27,8 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  // max-width: 740px;
+  max-width: 65%;
   padding: 0 10px;
   width: 100%;
 }
@@ -315,6 +316,13 @@ h1.post-title {
 footer {
   padding: 20px 0;
   text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
