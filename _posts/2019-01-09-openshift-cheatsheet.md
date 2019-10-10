@@ -2,7 +2,7 @@
 layout: post
 title: Openshift Cheetsheet
 permalink: openshift-cheatsheet
-date: 2019-10-09
+date: 2019-01-09
 ---
 
 
@@ -13,10 +13,10 @@ At the moment I am working on OpenShift, here I am writing stuff that is excitin
 **Create and switch project**
 
 ```
-$ oc new-project thespark
-$ oc projects
-$ oc project thespark
-$ oc delete project thespark
+oc new-project thespark
+oc projects
+oc project thespark
+oc delete project thespark
 ```
 
 **Expose applications**
