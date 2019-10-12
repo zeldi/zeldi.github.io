@@ -3,12 +3,13 @@ layout: default
 ---
 
 <div class="posts">
-  {% assign posts = site.posts | where_exp: "post", "post.category != 'common'" %}
-  {% for post in posts %}
+  {% assign sorted-posts = site.posts | where: "category","common" %}
+  {% for post in sorted-posts %}
     <article class="post">
+
       <h1 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
       <div class="date">
-        Written on {{ post.date | date: "%B %e, %Y" }}
+        Written in {{ post.language }}, on {{ post.date | date: "%B %e, %Y" }}
       </div>
 
       <div class="entry">

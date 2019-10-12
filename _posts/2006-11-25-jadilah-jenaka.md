@@ -3,6 +3,8 @@ layout: post
 title: Jadilah Zeldi yang Jenaka, Taqwa dan Baik Hati
 permalink: jadilah-jenaka
 date: 2006-11-25
+category: common
+language: Indonesian
 ---
 
 "Jadilah Zeldi yang jenaka, taqwa, dan baik hati...."

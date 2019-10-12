@@ -3,6 +3,8 @@ layout: post
 title: Buat Sahabatku
 permalink: buat-sahabat
 date: 2005-10-18
+category: common
+language: Indonesian
 ---
 
 Sahabat, hari baru menjelang larut. mungkin kau sudah memadamkan lampu dan tertidur pulas...tapi aku masih mencoba mencari kata-kata yang sudi untuk mewakili ungkapkan kegelisahanku...pelupuk mataku tak berhasil menemukan cara untuk tidur. Aku gundah teramat dalam.
