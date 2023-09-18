@@ -3,6 +3,7 @@ layout: post
 title: Creating Fusion of a Complementary Feature Set with MFCC using Librosa
 permalink: feature-fusion
 date: 2020-7-15
+tags: ["mfcc","librosa"]
 ---
 
 
