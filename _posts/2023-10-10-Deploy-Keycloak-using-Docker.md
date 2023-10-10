@@ -2,9 +2,8 @@
 layout: post
 title: Deploy Keycloak (quarkus version) in Docker
 permalink: keycloak-docker
-date: 2023-10-15
+date: 2023-10-10
 tags: ["keycloak","docker","postgresql"]
-category: devops
 ---
 
 
@@ -83,7 +82,7 @@ docker run -d --name keycloak-v21 -p 8080:8080 \
 docker logs -f keycloak-v21
 ```
 
-The keycloak page can be accessed via url http://<you-ip-address>:8080. Refer to https://www.keycloak.org/getting-started/getting-started-docker for detail on getting started with keycloak.
+The keycloak page can be accessed via url `http://[you-ip-address]:8080`. Refer to https://www.keycloak.org/getting-started/getting-started-docker for detail on getting started with keycloak.
 
 ## Outro
 

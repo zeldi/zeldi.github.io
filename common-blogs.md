@@ -13,7 +13,7 @@ layout: default
       </div>
 
       <div class="entry">
-        {{ post.excerpt | truncatewords:75 }}
+        {{ post.excerpt | truncatewords:175 }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More </a>
