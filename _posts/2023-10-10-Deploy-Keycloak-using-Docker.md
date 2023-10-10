@@ -2,25 +2,25 @@
 layout: post
 title: Deploy Keycloak (quarkus version) in Docker
 permalink: keycloak-docker
-date: 2023-09-15
+date: 2023-10-15
 tags: ["keycloak","docker","postgresql"]
 category: devops
 ---
 
 
-# Intro
+## Intro
 Keycloak is a widely-used, free software that helps manage identity and access management for applications, offering robust services for authentication and authorization.
 
-# Obselete version of Keycloak.
+## Obselete version of Keycloak.
 The JBOSS version of Keycloak is obselete. Therefore, the "jboss/keycloak" Docker image we've been using has not been updated for a year, which poses security risks and means we're not benefiting from new features. To address this issue, we should transition to the latest version of Keycloak, which is based on Quarkus. We should consider using the official Keycloak image available at "quay.io/keycloak/keycloak" to ensure we have the most recent version of Keycloak.
 
-# Challenge
+## Challenge
 
 One of issue with documentation of quarkus-based keycloak is insuffient howto for integrating Keycloak with external databases (i.e Postgres). Hence, it causes confusion for users trying to set up Keycloak with their chosen database system.
 
 Moreover, when linking Keycloak to Postgres, the documentation fails to provide clear instructions for executing the initial "kc.sh build" command. This omission adds unnecessary complexity for users.
 
-# Solution
+## Solution
 To address the above difficulties, we can craft a custom Dockerfile that addresses the challenges and establishes a smooth Keycloak configuration. Below is an illustration of a `Dockerfile` that rectifies the concerns:
 
 ```yaml
@@ -85,7 +85,7 @@ docker logs -f keycloak-v21
 
 The keycloak page can be accessed via url http://<you-ip-address>:8080. Refer to https://www.keycloak.org/getting-started/getting-started-docker for detail on getting started with keycloak.
 
-# Outro
+## Outro
 
 By upgrading to the quarkus-based keycloak, we are exposed with the latest features for Keycloak. Furthermore, using "quay.io/keycloak/keycloak" image and employing a custom Dockerfile, we can effectively address the issues associated from outdated Keycloak images (JBOSS version) and inadequate documentation regarding database integration.
 
