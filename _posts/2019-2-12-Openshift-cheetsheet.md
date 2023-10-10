@@ -3,6 +3,7 @@ layout: post
 title: Openshift Cheetsheet
 permalink: openshift-cheatsheet
 date: 2019-01-09
+category: [devops]
 ---
 
 At the moment I am working on Redhat OpenShift, here I am writing stuff that is exciting and I keep forgetting. The list has (almost) no order and is very random. 

@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Creating CSR and Key File for a SAN Certificate with Subject Alternate Names using OpenSSL
+title: Creating CSR and Key File for a SAN SSL Certificate using OpenSSL
 permalink: creating-san-csr
 date: 2023-09-15
 tags: ["csr","san","ssl"]
+category: devops
 ---
 
 
